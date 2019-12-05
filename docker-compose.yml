@@ -1,0 +1,47 @@
+version: '3'
+services:
+  web-python36-faceai:
+    image: yinhaozheng/web-python36-faceai
+    restart: always
+    ports:
+      - "7009:7009"
+  web-python36-web-python36-chinese-ocr:
+    image: yinhaozheng/web-python36-chinese-ocr
+    restart: always
+    ports:
+      - "7008:7008"
+  web-python36-playing-card-recognition:
+    image: yinhaozheng/web-python36-playing-card-recognition
+    restart: always
+    ports:
+      - "7007:7007"
+  web-python36-opencv-car-location:
+    image: yinhaozheng/web-python36-opencv-car-location
+    restart: always
+    ports:
+      - "7006:7006"
+  web-python27-image-stitching:
+    image: yinhaozheng/web-python27-image-stitching
+    restart: always
+    ports:
+      - "7005:7005"
+  web-python36-license-plate-recognition:
+    image: yinhaozheng/web-python36-license-plate-recognition
+    restart: always
+    ports:
+      - "7004:7004"
+  web-python36-nowatermark:
+    image: yinhaozheng/web-python36-nowatermark
+    restart: always
+    ports:
+      - "7003:7003"
+  web-python36-mathai:
+    image: yinhaozheng/web-python36-mathai
+    restart: always
+    ports:
+      - "7002:7002"
+  idcardocr:
+    image: raymondwong/idcardocr
+    restart: always
+    ports:
+      - "7001:7001"

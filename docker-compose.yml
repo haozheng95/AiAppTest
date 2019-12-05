@@ -44,4 +44,4 @@ services:
     image: raymondwong/idcardocr
     restart: always
     ports:
-      - "7001:7001"
+      - "7001:8080"

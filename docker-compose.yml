@@ -10,8 +10,8 @@ services:
     restart: always
     ports:
       - "7008:7008"
-  web-python36-playing-card-recognition:
-    image: yinhaozheng/web-python36-playing-card-recognition
+  web-python27-playing-card-recognition:
+    image: yinhaozheng/web-python27-playing-card-recognition
     restart: always
     ports:
       - "7007:7007"
@@ -20,8 +20,8 @@ services:
     restart: always
     ports:
       - "7006:7006"
-  web-python27-image-stitching:
-    image: yinhaozheng/web-python27-image-stitching
+  web-python36-image-stitching:
+    image: yinhaozheng/web-python36-image-stitching
     restart: always
     ports:
       - "7005:7005"

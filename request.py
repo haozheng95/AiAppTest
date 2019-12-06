@@ -13,8 +13,9 @@ __mtime__ = '2019-12-02'
 
 import requests
 
-baseUrl = "http://127.0.0.1"
+baseUrl = "http://47.105.165.164"
 fileDir = "data"
+
 
 def math_ai():
     port = 7002
@@ -149,4 +150,4 @@ def face_ai_face_recognition_outline():
 
 
 if __name__ == '__main__':
-    print(face_ai_face_recognition_outline())
+    print(image_stitching())

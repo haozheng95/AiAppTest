@@ -14,6 +14,7 @@ __mtime__ = '2019-12-02'
 import requests
 
 baseUrl = "http://47.105.165.164"
+# baseUrl = "http://127.0.0.1"
 fileDir = "data"
 
 
@@ -150,4 +151,4 @@ def face_ai_face_recognition_outline():
 
 
 if __name__ == '__main__':
-    print(image_stitching())
+    print(face_ai_colorize())

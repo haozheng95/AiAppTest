@@ -13,6 +13,7 @@ import sys
 __mtime__ = '2019-12-02'
 
 import requests
+
 baseUrl = "http://47.105.165.164"
 # baseUrl = "http://127.0.0.1"
 fileDir = "data"
@@ -160,7 +161,6 @@ def idcardocr():
         files = {'pic': f}
         response = requests.post(url=url, files=files, headers=headers)
     return dict(status_code=response.status_code, content=response.json(), response=response)
-
 
 
 if __name__ == '__main__':

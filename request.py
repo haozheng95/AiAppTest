@@ -8,11 +8,11 @@
 """
 import json
 import os
+import sys
 
 __mtime__ = '2019-12-02'
 
 import requests
-
 baseUrl = "http://47.105.165.164"
 # baseUrl = "http://127.0.0.1"
 fileDir = "data"
@@ -25,7 +25,7 @@ def math_ai():
     with open(file, "rb") as f:
         files = {'file': f}
         response = requests.post(url=url, files=files)
-    return dict(status_code=response.status_code, content=response.content)
+    return dict(status_code=response.status_code, content=response.json(), response=response)
 
 
 def nowatermark():
@@ -41,7 +41,7 @@ def nowatermark():
                 file=f
             )
             response = requests.post(url=url, files=files)
-    return dict(status_code=response.status_code, content=response.content)
+    return dict(status_code=response.status_code, content=response.json(), response=response)
 
 
 def license_plate_recognition():
@@ -51,7 +51,7 @@ def license_plate_recognition():
     with open(file, "rb") as f:
         files = {'file': f}
         response = requests.post(url=url, files=files)
-    return dict(status_code=response.status_code, content=response.json())
+    return dict(status_code=response.status_code, content=response.json(), response=response)
 
 
 def image_stitching():
@@ -67,7 +67,7 @@ def image_stitching():
                 img2=f
             )
             response = requests.post(url=url, files=files)
-    return dict(status_code=response.status_code, content=response.content)
+    return dict(status_code=response.status_code, content=response.json(), response=response)
 
 
 def opencv_car_location():
@@ -77,7 +77,7 @@ def opencv_car_location():
     with open(file, "rb") as f:
         files = {'file': f}
         response = requests.post(url=url, files=files)
-    return dict(status_code=response.status_code, content=response.content)
+    return dict(status_code=response.status_code, content=response.json(), response=response)
 
 
 def playing_card_recognition():
@@ -88,7 +88,7 @@ def playing_card_recognition():
     with open(file, "rb") as f:
         files = {'file': f}
         response = requests.post(url=url, data=data, files=files)
-    return dict(status_code=response.status_code, content=response.json())
+    return dict(status_code=response.status_code, content=response.json(), response=response)
 
 
 def chinese_ocr():
@@ -98,7 +98,7 @@ def chinese_ocr():
     with open(file, "rb") as f:
         files = {'exampleInputFile': f}
         response = requests.post(url=url, files=files)
-    return dict(status_code=response.status_code, content=response.json())
+    return dict(status_code=response.status_code, content=response.json(), response=response)
 
 
 def face_ai_1(name, file):
@@ -112,7 +112,7 @@ def face_ai_1(name, file):
     with open(file, "rb") as f:
         files = {'file': f}
         response = requests.post(url=url, files=files)
-    return dict(status_code=response.status_code, content=response.json())
+    return dict(status_code=response.status_code, content=response.json(), response=response)
 
 
 # 分辨性别
@@ -150,5 +150,18 @@ def face_ai_face_recognition_outline():
     return face_ai_1("faceRecognitionOutline", "ag.png")
 
 
+# 身份证识别
+def idcardocr():
+    port = 7001
+    headers = {"boundary": "----WebKitFormBoundary7MA4YWxkTrZu0gW"}
+    url = baseUrl + ":" + str(port)
+    file = os.path.join(fileDir, "idcardocr.jpg")
+    with open(file, "rb") as f:
+        files = {'pic': f}
+        response = requests.post(url=url, files=files, headers=headers)
+    return dict(status_code=response.status_code, content=response.json(), response=response)
+
+
+
 if __name__ == '__main__':
-    print(face_ai_colorize())
+    result = idcardocr()

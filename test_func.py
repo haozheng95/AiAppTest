@@ -22,96 +22,116 @@ normalCode = 200
 def test_math_ai():
     log = logging.getLogger(sys._getframe().f_code.co_name)
     result = math_ai()
-    log.debug(result)
+    print_api_details(result, log)
     assert result["status_code"] == normalCode
 
 
 def test_nowatermark():
     log = logging.getLogger(sys._getframe().f_code.co_name)
     result = nowatermark()
-    log.debug(result)
+    print_api_details(result, log)
     assert result["status_code"] == normalCode
 
 
 def test_license_plate_recognition():
     log = logging.getLogger(sys._getframe().f_code.co_name)
     result = license_plate_recognition()
-    log.debug(result)
+    print_api_details(result, log)
     assert result["status_code"] == normalCode
 
 
 def test_image_stitching():
     log = logging.getLogger(sys._getframe().f_code.co_name)
     result = image_stitching()
-    log.debug(result)
+    print_api_details(result, log)
     assert result["status_code"] == normalCode
 
 
 def test_opencv_car_location():
     log = logging.getLogger(sys._getframe().f_code.co_name)
     result = opencv_car_location()
-    log.debug(result)
+    print_api_details(result, log)
     assert result["status_code"] == normalCode
 
 
 def test_playing_card_recognition():
     log = logging.getLogger(sys._getframe().f_code.co_name)
     result = playing_card_recognition()
-    log.debug(result)
+    print_api_details(result, log)
     assert result["status_code"] == normalCode
 
 
 def test_chinese_ocr():
     log = logging.getLogger(sys._getframe().f_code.co_name)
     result = chinese_ocr()
-    log.debug(result)
+    print_api_details(result, log)
     assert result["status_code"] == normalCode
 
 
 def test_face_ai_gender():
     log = logging.getLogger(sys._getframe().f_code.co_name)
     result = face_ai_gender()
-    log.debug(result)
+    print_api_details(result, log)
     assert result["status_code"] == normalCode
 
 
 def test_face_ai_colorize():
     log = logging.getLogger(sys._getframe().f_code.co_name)
     result = face_ai_colorize()
-    log.debug(result)
+    print_api_details(result, log)
     assert result["status_code"] == normalCode
 
 
 def test_face_ai_compose():
     log = logging.getLogger(sys._getframe().f_code.co_name)
     result = face_ai_compose()
-    log.debug(result)
+    print_api_details(result, log)
     assert result["status_code"] == normalCode
 
 
 def test_face_ai_detection_opencv():
     log = logging.getLogger(sys._getframe().f_code.co_name)
     result = face_ai_detection_opencv()
-    log.debug(result)
+    print_api_details(result, log)
     assert result["status_code"] == normalCode
 
 
 def test_face_ai_emotion():
     log = logging.getLogger(sys._getframe().f_code.co_name)
     result = face_ai_emotion()
-    log.debug(result)
+    print_api_details(result, log)
     assert result["status_code"] == normalCode
 
 
 def test_face_ai_face_recognition_makeup():
     log = logging.getLogger(sys._getframe().f_code.co_name)
     result = face_ai_face_recognition_makeup()
-    log.debug(result)
+    print_api_details(result, log)
     assert result["status_code"] == normalCode
 
 
 def test_face_ai_face_recognition_outline():
     log = logging.getLogger(sys._getframe().f_code.co_name)
     result = face_ai_face_recognition_outline()
-    log.debug(result)
+    print_api_details(result, log)
     assert result["status_code"] == normalCode
+
+
+def test_idcardocr():
+    log = logging.getLogger(sys._getframe().f_code.co_name)
+    result = idcardocr()
+    print_api_details(result, log)
+    assert result["status_code"] == normalCode
+
+
+def print_api_details(result, log):
+    request = result["response"].request
+    log.debug("request url --------> %s", request.url)
+    # log.debug("request body -------> %s", request.body)
+    log.debug("request method -----> %s", request.method)
+    log.debug("request headers ----> %s", request.headers)
+    log.debug("response -----------> %s", result)
+
+
+if __name__ == '__main__':
+    pytest.main(["-vs"])

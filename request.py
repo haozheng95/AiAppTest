@@ -95,7 +95,7 @@ def playing_card_recognition():
 def chinese_ocr():
     port = 7008
     url = baseUrl + ":" + str(port)
-    file = os.path.join(fileDir, "chinese_ocr.jpg")
+    file = os.path.join(fileDir, "chinese_ocr_2.png")
     with open(file, "rb") as f:
         files = {'exampleInputFile': f}
         response = requests.post(url=url, files=files)
@@ -164,4 +164,5 @@ def idcardocr():
 
 
 if __name__ == '__main__':
-    result = idcardocr()
+    result = chinese_ocr()
+    print(result)

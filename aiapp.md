@@ -308,7 +308,7 @@ img{
 	- 请求方式 post
 	- 参数名 file
 	- python版本请求示例 
-		```
+	```
 	url = "http://47.105.165.164:7009/faceRecognitionMakeup"
    file = os.path.join(fileDir, "ag.png")
    with open(file, "rb") as f:
@@ -341,7 +341,7 @@ img{
 	- 请求方式 post
 	- 参数名 file
 	- python版本请求示例 
-		```
+	```
 	url = "http://47.105.165.164:7009/emotion"
    file = os.path.join(fileDir, "emotion.png")
    with open(file, "rb") as f:
@@ -376,7 +376,7 @@ img{
 	- 请求方式 post
 	- 参数名 file
 	- python版本请求示例 
-		```
+	```
 	url = "http://47.105.165.164:7009/detectionOpencv"
    file = os.path.join(fileDir, "xingye-1.png")
    with open(file, "rb") as f:
@@ -412,7 +412,7 @@ img{
 	- 请求方式 post
 	- 参数名 file
 	- python版本请求示例 
-		```
+	```
 	url = "http://47.105.165.164:7009/compose"
    file = os.path.join(fileDir, "compose.png")
    with open(file, "rb") as f:
@@ -447,7 +447,7 @@ img{
 	- 请求方式 post
 	- 参数名 file
 	- python版本请求示例 
-		```
+	```
 	url = "http://47.105.165.164:7009/colorize"
    file = os.path.join(fileDir, "colorize2.png")
    with open(file, "rb") as f:

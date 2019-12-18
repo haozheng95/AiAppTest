@@ -71,6 +71,7 @@ def image_stitching():
     return dict(status_code=response.status_code, content=response.json(), response=response)
 
 
+# pass
 def opencv_car_location():
     port = 7006
     url = baseUrl + ":" + str(port)
@@ -81,6 +82,7 @@ def opencv_car_location():
     return dict(status_code=response.status_code, content=response.json(), response=response)
 
 
+# pass
 def playing_card_recognition():
     port = 7007
     url = baseUrl + ":" + str(port)
@@ -92,6 +94,7 @@ def playing_card_recognition():
     return dict(status_code=response.status_code, content=response.json(), response=response)
 
 
+# pass
 def chinese_ocr():
     port = 7008
     url = baseUrl + ":" + str(port)
@@ -116,27 +119,27 @@ def face_ai_1(name, file):
     return dict(status_code=response.status_code, content=response.json(), response=response)
 
 
-# 分辨性别
+# 分辨性别 pass
 def face_ai_gender():
     return face_ai_1("gender", "gather.png")
 
 
-# 图片重新上色
+# 图片重新上色 pass
 def face_ai_colorize():
     return face_ai_1("colorize", "colorize2.png")
 
 
-# 图像加帽子特效
+# 图像加帽子特效 pass
 def face_ai_compose():
     return face_ai_1("compose", "compose.png")
 
 
-# 标出图像中五官的位置
+# 标出图像中五官的位置 pass
 def face_ai_detection_opencv():
     return face_ai_1("detectionOpencv", "xingye-1.png")
 
 
-# 标出图像中人脸的表情
+# 标出图像中人脸的表情 pass
 def face_ai_emotion():
     return face_ai_1("emotion", "emotion.png")
 
@@ -151,7 +154,7 @@ def face_ai_face_recognition_outline():
     return face_ai_1("faceRecognitionOutline", "ag.png")
 
 
-# 身份证识别
+# 身份证识别 pass
 def idcardocr():
     port = 7001
     headers = {"boundary": "----WebKitFormBoundary7MA4YWxkTrZu0gW"}
@@ -164,5 +167,5 @@ def idcardocr():
 
 
 if __name__ == '__main__':
-    result = chinese_ocr()
+    result = nowatermark()
     print(result)

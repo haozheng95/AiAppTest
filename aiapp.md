@@ -263,3 +263,325 @@ img{
      'response': <Response [200]>
     }
 	```
+
+--
+
+- 项目名称：绘制面部轮廓
+- 项目简述：
+- 服务标签：
+- 服务详情：
+- api接口
+	- 请求方式 post
+	- 参数名 file
+	- python版本请求示例
+	```
+	url = "http://47.105.165.164:7009/faceRecognitionOutline"
+   file = os.path.join(fileDir, "ag.png")
+   with open(file, "rb") as f:
+       files = {'file': f}
+       response = requests.post(url=url, files=files)
+   ---
+   print(response)
+   ---
+   {
+   	 'status_code': 200, 
+   	 'content': 
+   	           {
+   	            'result': 'http://47.105.165.164:7009/_uploads/PHOTO/1576648178.8192759ag_22.png'
+   	           }, 
+   	'response': <Response [200]>
+   	}
+   	```
+
+- 服务演示
+	- 输入图片 ![img](data/faceai/ag.png)
+	- 输出图片 ![img](http://47.105.165.164:7009/_uploads/PHOTO/1576648178.8192759ag_22.png)
+
+
+--
+
+- 项目名称：数字化妆
+- 项目简述：
+- 服务标签：
+- 服务详情：
+- api接口
+	- 请求方式 post
+	- 参数名 file
+	- python版本请求示例 
+		```
+	url = "http://47.105.165.164:7009/faceRecognitionMakeup"
+   file = os.path.join(fileDir, "ag.png")
+   with open(file, "rb") as f:
+       files = {'file': f}
+       response = requests.post(url=url, files=files)
+   ---
+   print(response)
+   ---
+   {
+   	 'status_code': 200, 
+   	 'content': 
+   	           {
+   	            'result': 'http://47.105.165.164:7009/_uploads/PHOTO/1576648420.6234505ag_23.png'
+   	           }, 
+   	'response': <Response [200]>
+   	}
+   	```
+
+- 服务演示
+	- 输入图片 ![img](data/faceai/ag.png)
+	- 输出图片 ![img](http://47.105.165.164:7009/_uploads/PHOTO/1576648420.6234505ag_23.png)
+
+-- 
+
+- 项目名称：标出图像中人脸的表情
+- 项目简述：
+- 服务标签：
+- 服务详情：
+- api接口
+	- 请求方式 post
+	- 参数名 file
+	- python版本请求示例 
+		```
+	url = "http://47.105.165.164:7009/emotion"
+   file = os.path.join(fileDir, "emotion.png")
+   with open(file, "rb") as f:
+       files = {'file': f}
+       response = requests.post(url=url, files=files)
+   ---
+   print(response)
+   ---
+   {
+   	 'status_code': 200, 
+   	 'content': 
+   	           {
+   	            'result': 'http://47.105.165.164:7009/_uploads/PHOTO/1576648571.1048806emotion_11.png'
+   	           }, 
+   	'response': <Response [200]>
+   	}
+   	``` 
+
+- 服务演示
+	- 输入图片 ![img](data/faceai/emotion.png)
+	- 输出图片 ![img](http://47.105.165.164:7009/_uploads/PHOTO/1576648571.1048806emotion_11.png)
+
+
+-- 
+
+
+- 项目名称：标出图像中五官的位置
+- 项目简述：
+- 服务标签：
+- 服务详情：
+- api接口
+	- 请求方式 post
+	- 参数名 file
+	- python版本请求示例 
+		```
+	url = "http://47.105.165.164:7009/detectionOpencv"
+   file = os.path.join(fileDir, "xingye-1.png")
+   with open(file, "rb") as f:
+       files = {'file': f}
+       response = requests.post(url=url, files=files)
+   ---
+   print(response)
+   ---
+   {
+   	 'status_code': 200, 
+   	 'content': 
+   	           {
+   	            'result': 'http://47.105.165.164:7009/_uploads/PHOTO/1576648834.1660767xingye-1_11.png'
+   	           }, 
+   	'response': <Response [200]>
+   	}
+   	``` 
+
+
+- 服务演示
+	- 输入图片 ![img](data/faceai/xingye-1.png)
+	- 输出图片 ![img](http://47.105.165.164:7009/_uploads/PHOTO/1576648834.1660767xingye-1_11.png)
+
+ 
+--
+
+
+- 项目名称：图像加帽子特效
+- 项目简述：
+- 服务标签：
+- 服务详情：
+- api接口
+	- 请求方式 post
+	- 参数名 file
+	- python版本请求示例 
+		```
+	url = "http://47.105.165.164:7009/compose"
+   file = os.path.join(fileDir, "compose.png")
+   with open(file, "rb") as f:
+       files = {'file': f}
+       response = requests.post(url=url, files=files)
+   ---
+   print(response)
+   ---
+   {
+   	 'status_code': 200, 
+   	 'content': 
+   	           {
+   	            'result': 'http://47.105.165.164:7009/_uploads/PHOTO/1576649061.355849compose_13.png'
+   	           }, 
+   	'response': <Response [200]>
+   	}
+   	``` 
+
+- 服务演示
+	- 输入图片 ![img](data/faceai/compose.png)
+	- 输出图片 ![img](http://47.105.165.164:7009/_uploads/PHOTO/1576649061.355849compose_13.png)
+
+
+--
+
+
+- 项目名称：图片重新上色
+- 项目简述：
+- 服务标签：
+- 服务详情：
+- api接口
+	- 请求方式 post
+	- 参数名 file
+	- python版本请求示例 
+		```
+	url = "http://47.105.165.164:7009/colorize"
+   file = os.path.join(fileDir, "colorize2.png")
+   with open(file, "rb") as f:
+       files = {'file': f}
+       response = requests.post(url=url, files=files)
+   ---
+   print(response)
+   ---
+   {
+   	 'status_code': 200, 
+   	 'content': 
+   	           {
+   	            'result': 'http://47.105.165.164:7009/_uploads/PHOTO/1576649204.618092colorize2_11.png'
+   	           }, 
+   	'response': <Response [200]>
+   	}
+   	``` 
+
+
+- 服务演示
+	- 输入图片 ![img](data/faceai/colorize2.png)
+	- 输出图片 ![img](http://47.105.165.164:7009/_uploads/PHOTO/1576649204.618092colorize2_11.png)
+
+	
+--
+
+- 项目名称：车牌位置标记
+- 项目简述：
+- 服务标签：
+- 服务详情：
+- api接口：
+	- 请求方式 post
+	- 参数名 file
+	- python版本请求示例
+	```
+	url = "http://47.105.165.164:7006"
+   file = os.path.join(fileDir, "opencv_car_location.jpg")
+   with open(file, "rb") as f:
+       files = {'file': f}
+       response = requests.post(url=url, files=files)
+   ---
+   print(response)
+   ---
+   {
+   	 'status_code': 200, 
+   	 'content': 
+   	           {
+   	            'result': 'http://47.105.165.164:7006/_uploads/PHOTO/1576649753.243514opencv_car_location_14.jpg'
+   	           }, 
+   	'response': <Response [200]>
+   	}
+   	```
+
+- 服务演示
+	- 输入图片 ![img](data/opencv_car_location.jpg)
+	- 输出图片 ![img](http://47.105.165.164:7006/_uploads/PHOTO/1576649753.243514opencv_car_location_14.jpg)
+
+--
+
+- 项目名称：合并两张图片
+- 项目简述
+- 服务标签
+- 服务详情
+- api接口
+	- 请求方式 post
+	- 参数名 img1，img2
+	- python版本请求示例
+	```
+	url = "http://47.105.165.164:7005"
+   img1 = os.path.join(fDir, "01_suburbA.jpg")
+   img2 = os.path.join(fDir, "01_suburbB.jpg")
+   with open(img1, "rb") as t:
+        with open(img2, "rb") as f:
+            files = dict(
+                img1=t,
+                img2=f
+            )
+            response = requests.post(url=url, files=files)
+   ---
+   print(response)
+   ---
+   {
+   	 'status_code': 200, 
+   	 'content': 
+   	           {
+   	            'result': 'http://47.105.165.164:7005/_uploads/PHOTO/1576649992.299759401_suburbB_13.jpg'
+   	           }, 
+   	'response': <Response [200]>
+   	}
+   	```
+   	
+   	
+- 服务演示
+	- 输入图片A ![img](data/ImageStitching/01_suburbA.jpg)
+	- 输入图片B ![img](data/ImageStitching/01_suburbB.jpg)
+	- 输出图片 ![img](http://47.105.165.164:7005/_uploads/PHOTO/1576649992.299759401_suburbB_13.jpg)
+
+	
+--
+
+- 项目名称：图片去水印
+- 项目简述
+- 服务标签
+- 服务详情
+- api接口
+	- 请求方式 post
+	- 参数名 template，file
+	- python版本请求示例
+	```
+	url = "http://47.105.165.164:7003"
+   template = os.path.join(fDir, "template.jpg")
+   file = os.path.join(fDir, "file.jpg")
+   with open(template, "rb") as t:
+        with open(file, "rb") as f:
+            files = dict(
+                template=t,
+                file=f
+            )
+            response = requests.post(url=url, files=files)
+   ---
+   print(response)
+   ---
+   {
+   	 'status_code': 200, 
+   	 'content': 
+   	           {
+   	            'result': 'http://47.105.165.164:7003/_uploads/PHOTO/1576650303.7791777file_12.jpg'
+   	           }, 
+   	'response': <Response [200]>
+   	}
+   	```
+   	
+
+- 服务演示
+	- 输入图片 【template】 ![img](data/nowatermark/template.jpg)
+	- 输入图片 【file】![img](data/nowatermark/file.jpg)
+	- 输出图片 ![img](http://47.105.165.164:7003/_uploads/PHOTO/1576650303.7791777file_12.jpg)

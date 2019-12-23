@@ -166,6 +166,16 @@ def idcardocr():
     return dict(status_code=response.status_code, content=response.json(), response=response)
 
 
+def chinese_ocr_1():
+    port = 7010
+    url = baseUrl + ":" + str(port) + "/chinese-ocr"
+    file = os.path.join(fileDir, "chinese_ocr_2.png")
+    with open(file, "rb") as f:
+        files = {'exampleInputFile': f}
+        response = requests.post(url=url, files=files)
+    return dict(status_code=response.status_code, content=response.json(), response=response)
+
+
 if __name__ == '__main__':
-    result = chinese_ocr()
+    result = chinese_ocr_1()
     print(result)

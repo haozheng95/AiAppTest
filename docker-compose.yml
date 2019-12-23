@@ -40,8 +40,8 @@ services:
     restart: always
     ports:
       - "7002:7002"
-  idcardocr:
-    image: raymondwong/idcardocr
+  web-python36-idcardocr:
+    image: yinhaozheng/web-python36-idcardocr
     restart: always
     ports:
       - "7001:8080"

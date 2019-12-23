@@ -100,7 +100,7 @@ def chinese_ocr():
     url = baseUrl + ":" + str(port)
     file = os.path.join(fileDir, "chinese_ocr_2.png")
     with open(file, "rb") as f:
-        files = {'exampleInputFile': f}
+        files = {'file': f}
         response = requests.post(url=url, files=files)
     return dict(status_code=response.status_code, content=response.json(), response=response)
 
@@ -161,11 +161,11 @@ def idcardocr():
     url = baseUrl + ":" + str(port)
     file = os.path.join(fileDir, "idcardocr.jpg")
     with open(file, "rb") as f:
-        files = {'pic': f}
+        files = {'file': f}
         response = requests.post(url=url, files=files, headers=headers)
     return dict(status_code=response.status_code, content=response.json(), response=response)
 
 
 if __name__ == '__main__':
-    result = nowatermark()
+    result = chinese_ocr()
     print(result)

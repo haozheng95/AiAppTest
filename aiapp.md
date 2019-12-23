@@ -19,7 +19,7 @@ img{
     url = "http://47.105.165.164:7001"
     file = os.path.join(fileDir, "idcardocr.jpg")
     with open(file, "rb") as f:
-        files = {'pic': f}
+        files = {'file': f}
         response = requests.post(url=url, files=files, headers=headers)
    -----
    print(response)

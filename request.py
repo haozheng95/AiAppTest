@@ -100,7 +100,7 @@ def chinese_ocr():
     url = baseUrl + ":" + str(port)
     file = os.path.join(fileDir, "chinese_ocr_2.png")
     with open(file, "rb") as f:
-        files = {'file': f}
+        files = {'exampleInputFile': f}
         response = requests.post(url=url, files=files)
     return dict(status_code=response.status_code, content=response.json(), response=response)
 

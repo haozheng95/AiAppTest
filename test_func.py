@@ -134,4 +134,5 @@ def print_api_details(result, log):
 
 
 if __name__ == '__main__':
-    pytest.main(["-vs"])
+    # pytest.main(["-vs"])
+    pytest.main()

@@ -166,16 +166,18 @@ def idcardocr():
     return dict(status_code=response.status_code, content=response.json(), response=response)
 
 
-def chinese_ocr_1():
+def idcardocr_1():
     port = 7010
-    url = baseUrl + ":" + str(port) + "/chinese-ocr"
-    file = os.path.join(fileDir, "chinese_ocr_2.png")
+    headers = {"boundary": "----WebKitFormBoundary7MA4YWxkTrZu0gW"}
+    url = baseUrl + ":" + str(port) + "/idcardocr"
+    file = os.path.join(fileDir, "idcardocr.jpg")
     with open(file, "rb") as f:
-        files = {'exampleInputFile': f}
-        response = requests.post(url=url, files=files)
+        files = {'file': f}
+        response = requests.post(url=url, files=files, headers=headers)
     return dict(status_code=response.status_code, content=response.json(), response=response)
 
 
+
 if __name__ == '__main__':
-    result = chinese_ocr_1()
+    result = idcardocr_1()
     print(result)

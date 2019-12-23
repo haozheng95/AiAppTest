@@ -46,10 +46,11 @@ services:
     ports:
       - "7001:8080"
   web-nginx-aiapp-server:
-    image: yinhaozheng/web-nginx-aiapp-server
+    image: nginx:1.11.6-alpine
     restart: always
     ports:
       - "7010:80"
       - "80:80"
       - "443:443"
-    command: [nginx, '-g', 'daemon off;']
+    volumes:
+      - ./conf.d:/etc/nginx/conf.d

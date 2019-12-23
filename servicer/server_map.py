@@ -55,12 +55,12 @@ def testNginxRequestOne():
     for content in requestOneList:
         print(content)
         result = requestOne(content["file"], content["url"])
-        assert result["status_code"] != 200
         print(result)
 
 
 if __name__ == '__main__':
     # testNginxRequestOne()
-    content = {'url': 'http://47.105.165.164:7010/mathai', 'file': '../data/math_ai.jpg'}
+    # content = {'url': 'http://47.105.165.164:7010/mathai', 'file': '../data/math_ai.jpg'}
+    content = {'url': 'http://47.105.165.164:7010/license-plate-recognition', 'file': '../data/licensePlateRecognition.jpg'}
     result = requestOne(content["file"], content["url"])
     print(result)

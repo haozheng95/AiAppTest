@@ -6,6 +6,10 @@
 @file: server_map.py
 @time: 2019-12-23 15:15
 """
+import os
+
+import pytest
+import requests
 
 __mtime__ = '2019-12-23'
 
@@ -26,3 +30,37 @@ AccessMap = {
     "faceai-faceRecognitionMakeup": "7009/faceRecognitionMakeup",
     "faceai-faceRecognitionOutline": "7009/faceRecognitionOutline",
 }
+
+baseUrl = "http://47.105.165.164:7010"
+fileDir = "../data"
+
+requestOneList = [
+    {"url": baseUrl + "/mathai", "file": os.path.join(fileDir, "math_ai.jpg")},
+    {"url": baseUrl + "/license-plate-recognition", "file": os.path.join(fileDir, "licensePlateRecognition.jpg")},
+    {"url": baseUrl + "/opencv-car-location", "file": os.path.join(fileDir, "opencv_car_location.jpg")},
+    {"url": baseUrl + "/chinese-ocr", "file": os.path.join(fileDir, "chinese_ocr_2.png")},
+    {"url": baseUrl + "/chinese-ocr", "file": os.path.join(fileDir, "chinese_ocr_2.png")},
+    {"url": baseUrl + "/idcardocr", "file": os.path.join(fileDir, "idcardocr.jpg")},
+]
+
+
+def requestOne(file, url):
+    with open(file, "rb") as f:
+        files = {'file': f}
+        response = requests.post(url=url, files=files)
+    return dict(status_code=response.status_code, content=response.json(), response=response)
+
+
+def testNginxRequestOne():
+    for content in requestOneList:
+        print(content)
+        result = requestOne(content["file"], content["url"])
+        assert result["status_code"] != 200
+        print(result)
+
+
+if __name__ == '__main__':
+    # testNginxRequestOne()
+    content = {'url': 'http://47.105.165.164:7010/mathai', 'file': '../data/math_ai.jpg'}
+    result = requestOne(content["file"], content["url"])
+    print(result)

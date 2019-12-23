@@ -19,6 +19,7 @@ baseUrl = "http://47.105.165.164"
 fileDir = "data"
 
 
+# 1
 def math_ai():
     port = 7002
     url = baseUrl + ":" + str(port)
@@ -45,6 +46,7 @@ def nowatermark():
     return dict(status_code=response.status_code, content=response.json(), response=response)
 
 
+# 1
 def license_plate_recognition():
     port = 7004
     url = baseUrl + ":" + str(port)
@@ -71,7 +73,7 @@ def image_stitching():
     return dict(status_code=response.status_code, content=response.json(), response=response)
 
 
-# pass
+# pass 1
 def opencv_car_location():
     port = 7006
     url = baseUrl + ":" + str(port)
@@ -94,13 +96,13 @@ def playing_card_recognition():
     return dict(status_code=response.status_code, content=response.json(), response=response)
 
 
-# pass
+# pass 1
 def chinese_ocr():
     port = 7008
     url = baseUrl + ":" + str(port)
     file = os.path.join(fileDir, "chinese_ocr_2.png")
     with open(file, "rb") as f:
-        files = {'exampleInputFile': f}
+        files = {'file': f}
         response = requests.post(url=url, files=files)
     return dict(status_code=response.status_code, content=response.json(), response=response)
 
@@ -154,7 +156,7 @@ def face_ai_face_recognition_outline():
     return face_ai_1("faceRecognitionOutline", "ag.png")
 
 
-# 身份证识别 pass
+# 身份证识别 pass 1
 def idcardocr():
     port = 7001
     headers = {"boundary": "----WebKitFormBoundary7MA4YWxkTrZu0gW"}
@@ -166,18 +168,6 @@ def idcardocr():
     return dict(status_code=response.status_code, content=response.json(), response=response)
 
 
-def idcardocr_1():
-    port = 7010
-    headers = {"boundary": "----WebKitFormBoundary7MA4YWxkTrZu0gW"}
-    url = baseUrl + ":" + str(port) + "/idcardocr"
-    file = os.path.join(fileDir, "idcardocr.jpg")
-    with open(file, "rb") as f:
-        files = {'file': f}
-        response = requests.post(url=url, files=files, headers=headers)
-    return dict(status_code=response.status_code, content=response.json(), response=response)
-
-
-
 if __name__ == '__main__':
-    result = idcardocr_1()
+    result = chinese_ocr()
     print(result)

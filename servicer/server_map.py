@@ -39,7 +39,6 @@ requestOneList = [
     {"url": baseUrl + "/license-plate-recognition", "file": os.path.join(fileDir, "licensePlateRecognition.jpg")},
     {"url": baseUrl + "/opencv-car-location", "file": os.path.join(fileDir, "opencv_car_location.jpg")},
     {"url": baseUrl + "/chinese-ocr", "file": os.path.join(fileDir, "chinese_ocr_2.png")},
-    {"url": baseUrl + "/chinese-ocr", "file": os.path.join(fileDir, "chinese_ocr_2.png")},
     {"url": baseUrl + "/idcardocr", "file": os.path.join(fileDir, "idcardocr.jpg")},
 ]
 
@@ -59,8 +58,4 @@ def testNginxRequestOne():
 
 
 if __name__ == '__main__':
-    # testNginxRequestOne()
-    # content = {'url': 'http://47.105.165.164:7010/mathai', 'file': '../data/math_ai.jpg'}
-    content = {'url': 'http://47.105.165.164:7010/license-plate-recognition', 'file': '../data/licensePlateRecognition.jpg'}
-    result = requestOne(content["file"], content["url"])
-    print(result)
+    testNginxRequestOne()

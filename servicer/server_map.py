@@ -119,7 +119,9 @@ def testNginxPlayingCardRecognition():
 
 
 if __name__ == '__main__':
-    content = {"url": baseUrl + "/license-plate-recognition", "file": os.path.join(fileDir, "car7.jpg")}
+    content = {"url": baseUrl + "/license-plate-recognition", "file": os.path.join(fileDir, "car5.jpg")}
+    content = {"url": baseUrl + "/chinese-ocr", "file": os.path.join(fileDir, "ocr_3.png")}
+
     print(content)
     result = requestOne(content["file"], content["url"])
     print(result)

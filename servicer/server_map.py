@@ -78,6 +78,6 @@ def tesstNginxRequestFaceAi():
 if __name__ == '__main__':
     # tesstNginxRequestFaceAi()
     content = {'url': 'http://47.105.165.164:7010/faceai-gender', 'file': '../data/faceai/gather.png'}
-    content = {'url': 'http://47.105.165.164:7009/gender', 'file': '../data/faceai/gather.png'}
+    # content = {'url': 'http://47.105.165.164:7009/gender', 'file': '../data/faceai/gather.png'}
     result = requestOne(content["file"], content["url"])
     print(result)

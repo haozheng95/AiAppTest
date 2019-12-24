@@ -119,8 +119,12 @@ def testNginxPlayingCardRecognition():
 
 
 if __name__ == '__main__':
-    testNginxPlayingCardRecognition()
-    testNginxNowatermark()
-    testNginxImageStitching()
-    testNginxRequestFaceAi()
-    testNginxRequestOne()
+    content = {"url": baseUrl + "/license-plate-recognition", "file": os.path.join(fileDir, "car7.jpg")}
+    print(content)
+    result = requestOne(content["file"], content["url"])
+    print(result)
+    # testNginxPlayingCardRecognition()
+    # testNginxNowatermark()
+    # testNginxImageStitching()
+    # testNginxRequestFaceAi()
+    # testNginxRequestOne()

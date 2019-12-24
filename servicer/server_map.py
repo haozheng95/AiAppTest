@@ -42,6 +42,17 @@ requestOneList = [
     {"url": baseUrl + "/idcardocr", "file": os.path.join(fileDir, "idcardocr.jpg")},
 ]
 
+faceAiDir = os.path.join(fileDir, "faceai")
+requestFaceAiList = [
+    {"url": baseUrl + "/faceai-gender", "file": os.path.join(faceAiDir, "gather.png")},
+    {"url": baseUrl + "/faceai-colorize", "file": os.path.join(faceAiDir, "colorize2.png")},
+    {"url": baseUrl + "/faceai-compose", "file": os.path.join(faceAiDir, "compose.png")},
+    {"url": baseUrl + "/faceai-detectionOpencv", "file": os.path.join(faceAiDir, "xingye-1.png")},
+    {"url": baseUrl + "/faceai-emotion", "file": os.path.join(faceAiDir, "emotion.png")},
+    {"url": baseUrl + "/faceai-faceRecognitionMakeup", "file": os.path.join(faceAiDir, "ag.png")},
+    {"url": baseUrl + "/faceai-faceRecognitionOutline", "file": os.path.join(faceAiDir, "ag.png")},
+]
+
 
 def requestOne(file, url):
     with open(file, "rb") as f:
@@ -57,5 +68,16 @@ def testNginxRequestOne():
         print(result)
 
 
+def tesstNginxRequestFaceAi():
+    for content in requestFaceAiList:
+        print(content)
+        result = requestOne(content["file"], content["url"])
+        print(result)
+
+
 if __name__ == '__main__':
-    testNginxRequestOne()
+    # tesstNginxRequestFaceAi()
+    content = {'url': 'http://47.105.165.164:7010/faceai-gender', 'file': '../data/faceai/gather.png'}
+    content = {'url': 'http://47.105.165.164:7009/gender', 'file': '../data/faceai/gather.png'}
+    result = requestOne(content["file"], content["url"])
+    print(result)

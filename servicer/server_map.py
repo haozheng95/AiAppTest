@@ -68,16 +68,59 @@ def testNginxRequestOne():
         print(result)
 
 
-def tesstNginxRequestFaceAi():
+def testNginxRequestFaceAi():
     for content in requestFaceAiList:
         print(content)
         result = requestOne(content["file"], content["url"])
         print(result)
 
 
-if __name__ == '__main__':
-    # tesstNginxRequestFaceAi()
-    content = {'url': 'http://47.105.165.164:7010/faceai-gender', 'file': '../data/faceai/gather.png'}
-    # content = {'url': 'http://47.105.165.164:7009/gender', 'file': '../data/faceai/gather.png'}
-    result = requestOne(content["file"], content["url"])
+def testNginxImageStitching():
+    url = baseUrl + "/image-stitching"
+    fDir = os.path.join(fileDir, "ImageStitching")
+    img1 = os.path.join(fDir, "01_suburbA.jpg")
+    img2 = os.path.join(fDir, "01_suburbB.jpg")
+    with open(img1, "rb") as t:
+        with open(img2, "rb") as f:
+            files = dict(
+                img1=t,
+                img2=f
+            )
+            response = requests.post(url=url, files=files)
+    result = dict(status_code=response.status_code, content=response.json(), response=response)
     print(result)
+
+
+def testNginxNowatermark():
+    url = baseUrl + "/nowatermark"
+    fDir = os.path.join(fileDir, "nowatermark")
+    template = os.path.join(fDir, "template.jpg")
+    file = os.path.join(fDir, "file.jpg")
+    with open(template, "rb") as t:
+        with open(file, "rb") as f:
+            files = dict(
+                template=t,
+                file=f
+            )
+            response = requests.post(url=url, files=files)
+    result = dict(status_code=response.status_code, content=response.json(), response=response)
+    print(result)
+
+
+def testNginxPlayingCardRecognition():
+    url = baseUrl + "/playing-card-recognition"
+    file = os.path.join(fileDir, "playing-card-recognition.jpg")
+    data = {"num_cards": 4}
+    with open(file, "rb") as f:
+        files = {'file': f}
+        response = requests.post(url=url, data=data, files=files)
+    result = dict(status_code=response.status_code, content=response.json(), response=response)
+    print(result)
+
+
+if __name__ == '__main__':
+    testNginxPlayingCardRecognition()
+    testNginxNowatermark()
+    testNginxImageStitching()
+    testNginxRequestFaceAi()
+    testNginxRequestOne()

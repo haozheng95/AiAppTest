@@ -62,6 +62,7 @@ def requestOne(file, url):
     with open(file, "rb") as f:
         files = {'file': f}
         response = requests.post(url=url, files=files)
+    # request_download(url, response.json(), url.replace(baseUrl, "").replace("/", ""))
     return dict(status_code=response.status_code, content=response.json(), response=response)
 
 
@@ -74,7 +75,9 @@ def testNginxRequestOne():
 
 def testNginxRequestFaceAi():
     for content in requestFaceAiList:
+        print(content)
         result = requestOne(content["file"], content["url"])
+        print(result)
 
 
 def testNginxImageStitching():
@@ -134,16 +137,25 @@ def tesstNginxCompose():
     print(result)
 
 
+# def request_download(url, res, name):
+#     import requests
+#     if "result" in res and res["result"].startswith("http"):
+#         r = requests.get(url, stream=True)
+#         with open('./image/' + name + res["result"][-4:], 'wb') as f:
+#             for chunk in r.iter_content(chunk_size=32):
+#                 f.write(chunk)
+
+
 if __name__ == '__main__':
-    tesstNginxCompose()
-    # content = {"url": baseUrl + "/license-plate-recognition", "file": os.path.join(fileDir, "car5.jpg")}
-    # content = {"url": baseUrl + "/chinese-ocr", "file": os.path.join(fileDir, "ocr_3.png")}
-    #
-    # print(content)
-    # result = requestOne(content["file"], content["url"])
-    # print(result)
-    testNginxPlayingCardRecognition()
-    testNginxNowatermark()
+    # tesstNginxCompose()
+    # # content = {"url": baseUrl + "/license-plate-recognition", "file": os.path.join(fileDir, "car5.jpg")}
+    # # content = {"url": baseUrl + "/chinese-ocr", "file": os.path.join(fileDir, "ocr_3.png")}
+    # #
+    # # print(content)
+    # # result = requestOne(content["file"], content["url"])
+    # # print(result)
+    # testNginxPlayingCardRecognition()
+    # testNginxNowatermark()
     testNginxImageStitching()
-    testNginxRequestFaceAi()
-    testNginxRequestOne()
+    # testNginxRequestFaceAi()
+    # testNginxRequestOne()

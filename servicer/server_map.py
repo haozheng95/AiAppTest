@@ -30,6 +30,7 @@ AccessMap = {
     "faceai-faceRecognitionMakeup": "7009/faceRecognitionMakeup",
     "faceai-faceRecognitionOutline": "7009/faceRecognitionOutline",
     "document-scanner": "7011",
+    "lane": "7012",
 }
 
 baseUrl = "http://47.105.165.164:7010"
@@ -42,6 +43,7 @@ requestOneList = [
     {"url": baseUrl + "/chinese-ocr", "file": os.path.join(fileDir, "chinese_ocr_2.png")},
     {"url": baseUrl + "/idcardocr", "file": os.path.join(fileDir, "idcardocr.jpg")},
     {"url": baseUrl + "/document-scanner", "file": os.path.join(fileDir, "chart.jpg")},
+    {"url": baseUrl + "/lane", "file": os.path.join(fileDir, "lane.jpg")},
 ]
 
 faceAiDir = os.path.join(fileDir, "faceai")

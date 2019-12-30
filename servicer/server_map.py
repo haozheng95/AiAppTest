@@ -46,7 +46,7 @@ faceAiDir = os.path.join(fileDir, "faceai")
 requestFaceAiList = [
     {"url": baseUrl + "/faceai-gender", "file": os.path.join(faceAiDir, "gather.png")},
     {"url": baseUrl + "/faceai-colorize", "file": os.path.join(faceAiDir, "colorize2.png")},
-    {"url": baseUrl + "/faceai-compose", "file": os.path.join(faceAiDir, "compose.png")},
+    # {"url": baseUrl + "/faceai-compose", "file": os.path.join(faceAiDir, "compose.png")},
     {"url": baseUrl + "/faceai-detectionOpencv", "file": os.path.join(faceAiDir, "xingye-1.png")},
     {"url": baseUrl + "/faceai-emotion", "file": os.path.join(faceAiDir, "emotion.png")},
     {"url": baseUrl + "/faceai-faceRecognitionMakeup", "file": os.path.join(faceAiDir, "ag.png")},
@@ -70,9 +70,7 @@ def testNginxRequestOne():
 
 def testNginxRequestFaceAi():
     for content in requestFaceAiList:
-        print(content)
         result = requestOne(content["file"], content["url"])
-        print(result)
 
 
 def testNginxImageStitching():
@@ -118,13 +116,28 @@ def testNginxPlayingCardRecognition():
     print(result)
 
 
-if __name__ == '__main__':
-    content = {"url": baseUrl + "/license-plate-recognition", "file": os.path.join(fileDir, "car5.jpg")}
-    content = {"url": baseUrl + "/chinese-ocr", "file": os.path.join(fileDir, "ocr_3.png")}
-
-    print(content)
-    result = requestOne(content["file"], content["url"])
+def tesstNginxCompose():
+    text = {"url": baseUrl + "/faceai-compose", "file": os.path.join(faceAiDir, "compose.png"),
+            "decorate": os.path.join(faceAiDir, "maozi-1.png")}
+    with open(text["file"], "rb") as t:
+        with open(text["decorate"], "rb") as f:
+            files = dict(
+                file=t,
+                decorate=f
+            )
+            response = requests.post(url=text["url"], files=files)
+    result = dict(status_code=response.status_code, content=response.json(), response=response)
     print(result)
+
+
+if __name__ == '__main__':
+    tesstNginxCompose()
+    # content = {"url": baseUrl + "/license-plate-recognition", "file": os.path.join(fileDir, "car5.jpg")}
+    # content = {"url": baseUrl + "/chinese-ocr", "file": os.path.join(fileDir, "ocr_3.png")}
+    #
+    # print(content)
+    # result = requestOne(content["file"], content["url"])
+    # print(result)
     # testNginxPlayingCardRecognition()
     # testNginxNowatermark()
     # testNginxImageStitching()

@@ -15,7 +15,7 @@ __mtime__ = '2019-12-02'
 import requests
 
 baseUrl = "http://47.105.165.164"
-# baseUrl = "http://127.0.0.1"
+baseUrl = "http://127.0.0.1"
 fileDir = "data"
 
 
@@ -110,14 +110,20 @@ def chinese_ocr():
 def face_ai_1(name, file):
     port = 7009
     url = baseUrl + ":" + str(port)
+    files = {}
     face_ai_data = os.path.join(fileDir, "faceai")
-
+    if name == "compose":
+        maozi = os.path.join(face_ai_data, "maozi-1.png")
+        decorate = open(maozi, "rb")
+        files["decorate"] = decorate
     url += "/" + name
 
     file = os.path.join(face_ai_data, file)
     with open(file, "rb") as f:
-        files = {'file': f}
+        files['file'] = f
         response = requests.post(url=url, files=files)
+    if "decorate" in files:
+        files["decorate"].close()
     return dict(status_code=response.status_code, content=response.json(), response=response)
 
 
@@ -169,5 +175,5 @@ def idcardocr():
 
 
 if __name__ == '__main__':
-    result = chinese_ocr()
+    result = face_ai_compose()
     print(result)

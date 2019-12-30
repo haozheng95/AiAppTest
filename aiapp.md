@@ -424,13 +424,14 @@ img{
 - 服务详情：
 - api接口
 	- 请求方式 post
-	- 参数名 file
+	- 参数名 file， decorate
 	- python版本请求示例 
 	```
-	url = "http://47.105.165.164:7009/compose"
+   url = "http://47.105.165.164:7009/compose"
    file = os.path.join(fileDir, "compose.png")
+   decorate = open(os.path.join(fileDir, "maozi-1.png"), "rb")
    with open(file, "rb") as f:
-       files = {'file': f}
+       files = {'file': f, 'decorate':decorate}
        response = requests.post(url=url, files=files)
    ---
    print(response)

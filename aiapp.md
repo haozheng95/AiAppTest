@@ -665,5 +665,5 @@ img{
    	```
 
 - 服务演示
-	- 输入图片 ![img](data/scanner_doc/lane.jpg)
+	- 输入图片 ![img](data/lane.jpg)
 	- 输出图片 ![img](http://47.105.165.164:7012/_uploads/PHOTO/1577695937.5642009lane.jpg)

@@ -15,7 +15,7 @@ __mtime__ = '2019-12-02'
 import requests
 
 baseUrl = "http://47.105.165.164"
-baseUrl = "http://127.0.0.1"
+# baseUrl = "http://127.0.0.1"
 fileDir = "data"
 
 
@@ -175,10 +175,10 @@ def idcardocr():
 
 
 def document_scanner():
-    port = 5000
+    port = 7011
     url = baseUrl + ":" + str(port)
     dir = os.path.join(fileDir, "scanner_doc")
-    file = os.path.join(dir, "cell_pic.jpg")
+    file = os.path.join(dir, "desk.JPG")
     with open(file, "rb") as f:
         files = {'file': f}
         response = requests.post(url=url, files=files)

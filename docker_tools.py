@@ -59,8 +59,8 @@ def removeDockerShell(name, tag):
 def main():
     images = findDockerShell()
     for image in images:
-        processDockerShell(image)
-        # removeDockerShell(image[0], image[1])
+        # processDockerShell(image)
+        removeDockerShell(image[0], image[1])
 
 
 if __name__ == '__main__':

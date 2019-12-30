@@ -15,7 +15,7 @@ __mtime__ = '2019-12-02'
 import requests
 
 baseUrl = "http://47.105.165.164"
-# baseUrl = "http://127.0.0.1"
+baseUrl = "http://127.0.0.1"
 fileDir = "data"
 
 
@@ -185,6 +185,16 @@ def document_scanner():
     return dict(status_code=response.status_code, content=response.json(), response=response)
 
 
+def lane():
+    port = 5000
+    url = baseUrl + ":" + str(port)
+    file = os.path.join(fileDir, "lane.jpg")
+    with open(file, "rb") as f:
+        files = {'file': f}
+        response = requests.post(url=url, files=files)
+    return dict(status_code=response.status_code, content=response.json(), response=response)
+
+
 if __name__ == '__main__':
-    result = document_scanner()
+    result = lane()
     print(result)

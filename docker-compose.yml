@@ -62,5 +62,5 @@ services:
   web-python36-lane:
     image: yinhaozheng/web-python36-lane
     restart: always
-      ports:
-        - "7012:5000"
+    ports:
+      - "7012:5000"

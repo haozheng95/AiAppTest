@@ -600,3 +600,37 @@ img{
 	- 输入图片 【template】 ![img](data/nowatermark/template.jpg)
 	- 输入图片 【file】![img](data/nowatermark/file.jpg)
 	- 输出图片 ![img](http://47.105.165.164:7003/_uploads/PHOTO/1576650303.7791777file_12.jpg)
+
+
+--
+
+- 项目名称：文档扫描
+- 项目简述：
+- 服务标签：
+- 服务详情：
+- api接口：
+	- 请求方式 post
+	- 参数名 file
+	- python版本请求示例
+	```
+	url = "http://47.105.165.164:7011"
+   file = os.path.join(fileDir, "chart.JPG")
+   with open(file, "rb") as f:
+       files = {'file': f}
+       response = requests.post(url=url, files=files)
+   ---
+   print(response)
+   ---
+   {
+   	 'status_code': 200, 
+   	 'content': 
+   	           {
+   	            'result': 'http://47.105.165.164:7006/_uploads/PHOTO/1576649753.243514opencv_car_location_14.jpg'
+   	           }, 
+   	'response': <Response [200]>
+   	}
+   	```
+
+- 服务演示
+	- 输入图片 ![img](data/scanner_doc/desk.JPG)
+	- 输出图片 ![img](http://47.105.165.164:7006/_uploads/PHOTO/1576649753.243514opencv_car_location_14.jpg)

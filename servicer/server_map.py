@@ -29,6 +29,7 @@ AccessMap = {
     "faceai-emotion": "7009/emotion",
     "faceai-faceRecognitionMakeup": "7009/faceRecognitionMakeup",
     "faceai-faceRecognitionOutline": "7009/faceRecognitionOutline",
+    "document-scanner": "7011",
 }
 
 baseUrl = "http://47.105.165.164:7010"
@@ -40,6 +41,7 @@ requestOneList = [
     {"url": baseUrl + "/opencv-car-location", "file": os.path.join(fileDir, "opencv_car_location.jpg")},
     {"url": baseUrl + "/chinese-ocr", "file": os.path.join(fileDir, "chinese_ocr_2.png")},
     {"url": baseUrl + "/idcardocr", "file": os.path.join(fileDir, "idcardocr.jpg")},
+    {"url": baseUrl + "/document-scanner", "file": os.path.join(fileDir, "chart.jpg")},
 ]
 
 faceAiDir = os.path.join(fileDir, "faceai")
@@ -138,8 +140,8 @@ if __name__ == '__main__':
     # print(content)
     # result = requestOne(content["file"], content["url"])
     # print(result)
-    # testNginxPlayingCardRecognition()
-    # testNginxNowatermark()
-    # testNginxImageStitching()
-    # testNginxRequestFaceAi()
-    # testNginxRequestOne()
+    testNginxPlayingCardRecognition()
+    testNginxNowatermark()
+    testNginxImageStitching()
+    testNginxRequestFaceAi()
+    testNginxRequestOne()

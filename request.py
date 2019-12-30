@@ -174,6 +174,17 @@ def idcardocr():
     return dict(status_code=response.status_code, content=response.json(), response=response)
 
 
+def document_scanner():
+    port = 5000
+    url = baseUrl + ":" + str(port)
+    dir = os.path.join(fileDir, "scanner_doc")
+    file = os.path.join(dir, "cell_pic.jpg")
+    with open(file, "rb") as f:
+        files = {'file': f}
+        response = requests.post(url=url, files=files)
+    return dict(status_code=response.status_code, content=response.json(), response=response)
+
+
 if __name__ == '__main__':
-    result = face_ai_compose()
+    result = document_scanner()
     print(result)

@@ -54,3 +54,10 @@ services:
       - "443:443"
     volumes:
       - ./conf.d:/etc/nginx/conf.d
+
+  web-python36-document-scanner:
+    image: yinhaozheng/web-python36-document-scanner
+    restart: always
+    ports:
+      - "7011:5000"
+

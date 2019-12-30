@@ -15,7 +15,7 @@ __mtime__ = '2019-12-02'
 import requests
 
 baseUrl = "http://47.105.165.164"
-baseUrl = "http://127.0.0.1"
+# baseUrl = "http://127.0.0.1"
 fileDir = "data"
 
 
@@ -186,7 +186,7 @@ def document_scanner():
 
 
 def lane():
-    port = 5000
+    port = 7012
     url = baseUrl + ":" + str(port)
     file = os.path.join(fileDir, "lane.jpg")
     with open(file, "rb") as f:

@@ -15,7 +15,7 @@ __mtime__ = '2019-12-02'
 import requests
 
 baseUrl = "http://47.105.165.164"
-# baseUrl = "http://127.0.0.1"
+baseUrl = "http://127.0.0.1"
 fileDir = "data"
 
 
@@ -197,5 +197,5 @@ def lane():
 
 
 if __name__ == '__main__':
-    result = face_ai_colorize()
+    result = face_ai_gender()
     print(result)

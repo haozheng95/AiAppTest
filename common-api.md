@@ -20,7 +20,7 @@
 -
 
 
-<span id = "mathai"> mathai </span>``
+<span id = "mathai"> mathai </span>
 
 - 服务名称：一个拍照做题程序
 - 服务简述：输入一张包含数学计算题的图片，输出识别出的数学计算式以及计算结果

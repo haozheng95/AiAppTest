@@ -119,6 +119,7 @@ def face_ai_1(name, file):
     url += "/" + name
 
     file = os.path.join(face_ai_data, file)
+    # file = "/Users/yinhaozheng/PycharmProjects/AiAppTest/servicer/image/1577699498.78695colorize2_3.png"
     with open(file, "rb") as f:
         files['file'] = f
         response = requests.post(url=url, files=files)
@@ -196,5 +197,5 @@ def lane():
 
 
 if __name__ == '__main__':
-    result = lane()
+    result = face_ai_colorize()
     print(result)

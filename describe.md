@@ -4,15 +4,15 @@
 | mathai        | [jump](https://github.com/Roujack/mathAI)     |   [jump](#mathai)    |[jump](https://github.com/Roujack/mathAI/tree/master/%E7%B3%BB%E7%BB%9F%E4%BB%A3%E7%A0%81(code)/testImgs)|
 | image-stitching        | [jump](https://github.com/pavanpn/Image-Stitching)     |   [jump](#image-stitching)    |[jump](https://github.com/pavanpn/Image-Stitching/tree/master/images)|
 | playing-card-recognition        | [jump](https://github.com/arnabdotorg/Playing-Card-Recognition)      |   [jump](#playing-card-recognition)    |[jump](data/Playing-Card-Recognition)|
-| document-scanner       | [jump](https://github.com/andrewdcampbell/OpenCV-Document-Scanner)     |   [jump](#document-scanner)    ||
-| lane     | [jump](https://github.com/ex2tron/OpenCV-Python-Tutorial/tree/master/%E6%8C%91%E6%88%98%E4%BB%BB%E5%8A%A13%EF%BC%9A%E8%BD%A6%E9%81%93%E6%A3%80%E6%B5%8B#%E5%BC%95%E7%94%A8)    |   [jump](#lane)    ||
-| faceai-gender     | [jump](https://github.com/vipstone/faceai/blob/master/doc/gender.md)    |   [jump](#faceai-gender)    ||
-| faceai-colorize    | -    |   [jump](#faceai-colorize)    ||
-| faceai-compose   | [jump](https://github.com/vipstone/faceai/blob/master/doc/compose.md)     |   [jump](#faceai-compose)    ||
-| faceai-detectionOpencv   | -     |   [jump](#faceai-detectionOpencv)    ||
-| faceai-emotion  | [jump](https://github.com/vipstone/faceai/blob/master/doc/emotion.md)    |   [jump](#faceai-emotion)    ||
-| faceai-faceRecognitionMakeup  | [jump](https://github.com/vipstone/faceai/blob/master/doc/faceRecognitionMakeup.md)    |   [jump](#faceai-faceRecognitionMakeup)    ||
-| faceai-faceRecognitionOutline   | [jump](https://github.com/vipstone/faceai/blob/master/doc/faceRecognitionOutline.md)     |   [jump](#faceai-faceRecognitionOutline)    ||
+| document-scanner       | [jump](https://github.com/andrewdcampbell/OpenCV-Document-Scanner)     |   [jump](#document-scanner)    |[jump](https://github.com/andrewdcampbell/OpenCV-Document-Scanner/tree/master/sample_images)|
+| lane     | [jump](https://github.com/ex2tron/OpenCV-Python-Tutorial/tree/master/%E6%8C%91%E6%88%98%E4%BB%BB%E5%8A%A13%EF%BC%9A%E8%BD%A6%E9%81%93%E6%A3%80%E6%B5%8B#%E5%BC%95%E7%94%A8)    |   [jump](#lane)    |[jump](data/lane)|
+| faceai-gender     | [jump](https://github.com/vipstone/faceai/blob/master/doc/gender.md)    |   [jump](#faceai-gender)    |[jump](https://github.com/vipstone/faceai/blob/master/faceai/img/gather.png)|
+| faceai-colorize    | -    |   [jump](#faceai-colorize)    |[jump](https://github.com/vipstone/faceai/tree/master/faceai/img/colorize)|
+| faceai-compose   | [jump](https://github.com/vipstone/faceai/blob/master/doc/compose.md)     |   [jump](#faceai-compose)    |[jump](https://github.com/vipstone/faceai/tree/master/faceai/img/compose)|
+| faceai-detectionOpencv   | -     |   [jump](#faceai-detectionOpencv)    |-|
+| faceai-emotion  | [jump](https://github.com/vipstone/faceai/blob/master/doc/emotion.md)    |   [jump](#faceai-emotion)    |[jump](https://github.com/vipstone/faceai/blob/master/faceai/img/emotion/happy.png)|
+| faceai-faceRecognitionMakeup  | [jump](https://github.com/vipstone/faceai/blob/master/doc/faceRecognitionMakeup.md)    |   [jump](#faceai-faceRecognitionMakeup)    |-|
+| faceai-faceRecognitionOutline   | [jump](https://github.com/vipstone/faceai/blob/master/doc/faceRecognitionOutline.md)     |   [jump](#faceai-faceRecognitionOutline)    |-|
 
 
 

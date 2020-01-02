@@ -1,17 +1,17 @@
 | 应用        | github 链接   |  api详情  |
 | --------   | :-----   | :----: |
-| mathai        | https://github.com/Roujack/mathAI     |   [jump](#mathai)    |
-| image-stitching        | https://github.com/pavanpn/Image-Stitching     |   [jump](#image-stitching)    |
-| playing-card-recognition        | https://github.com/arnabdotorg/Playing-Card-Recognition      |   [jump](#playing-card-recognition)    |
-| document-scanner       | https://github.com/andrewdcampbell/OpenCV-Document-Scanner     |   [jump](#document-scanner)    |
-| lane     | https://github.com/ex2tron/OpenCV-Python-Tutorial/tree/master/%E6%8C%91%E6%88%98%E4%BB%BB%E5%8A%A13%EF%BC%9A%E8%BD%A6%E9%81%93%E6%A3%80%E6%B5%8B#%E5%BC%95%E7%94%A8    |   [jump](#lane)    |
-| faceai-gender     | https://github.com/vipstone/faceai/blob/master/doc/gender.md     |   [jump](#faceai-gender)    |
+| mathai        | [jump](https://github.com/Roujack/mathAI)     |   [jump](#mathai)    |
+| image-stitching        | [jump](https://github.com/pavanpn/Image-Stitching)     |   [jump](#image-stitching)    |
+| playing-card-recognition        | [jump](https://github.com/arnabdotorg/Playing-Card-Recognition)      |   [jump](#playing-card-recognition)    |
+| document-scanner       | [jump](https://github.com/andrewdcampbell/OpenCV-Document-Scanner)     |   [jump](#document-scanner)    |
+| lane     | [jump](https://github.com/ex2tron/OpenCV-Python-Tutorial/tree/master/%E6%8C%91%E6%88%98%E4%BB%BB%E5%8A%A13%EF%BC%9A%E8%BD%A6%E9%81%93%E6%A3%80%E6%B5%8B#%E5%BC%95%E7%94%A8)    |   [jump](#lane)    |
+| faceai-gender     | [jump](https://github.com/vipstone/faceai/blob/master/doc/gender.md)     |   [jump](#faceai-gender)    |
 | faceai-colorize    | -    |   [jump](#faceai-colorize)    |
-| faceai-compose   | https://github.com/vipstone/faceai/blob/master/doc/compose.md     |   [jump](#faceai-compose)    |
+| faceai-compose   | [jump](https://github.com/vipstone/faceai/blob/master/doc/compose.md)     |   [jump](#faceai-compose)    |
 | faceai-detectionOpencv   | -     |   [jump](#faceai-detectionOpencv)    |
-| faceai-emotion  | https://github.com/vipstone/faceai/blob/master/doc/emotion.md    |   [jump](#faceai-emotion)    |
-| faceai-faceRecognitionMakeup  | https://github.com/vipstone/faceai/blob/master/doc/faceRecognitionMakeup.md    |   [jump](#faceai-faceRecognitionMakeup)    |
-| faceai-faceRecognitionOutline   | https://github.com/vipstone/faceai/blob/master/doc/faceRecognitionOutline.md     |   [jump](#faceai-faceRecognitionOutline)    |
+| faceai-emotion  | [jump](https://github.com/vipstone/faceai/blob/master/doc/emotion.md)    |   [jump](#faceai-emotion)    |
+| faceai-faceRecognitionMakeup  | [jump](https://github.com/vipstone/faceai/blob/master/doc/faceRecognitionMakeup.md)    |   [jump](#faceai-faceRecognitionMakeup)    |
+| faceai-faceRecognitionOutline   | [jump](https://github.com/vipstone/faceai/blob/master/doc/faceRecognitionOutline.md)     |   [jump](#faceai-faceRecognitionOutline)    |
 
 
 

@@ -147,7 +147,7 @@ def tesstNginxCompose():
 
 
 if __name__ == '__main__':
-    # tesstNginxCompose()
+    tesstNginxCompose()
     # # content = {"url": baseUrl + "/license-plate-recognition", "file": os.path.join(fileDir, "car5.jpg")}
     # # content = {"url": baseUrl + "/chinese-ocr", "file": os.path.join(fileDir, "ocr_3.png")}
     # #
@@ -156,6 +156,6 @@ if __name__ == '__main__':
     # # print(result)
     # testNginxPlayingCardRecognition()
     # testNginxNowatermark()
-    testNginxImageStitching()
+    # testNginxImageStitching()
     # testNginxRequestFaceAi()
     # testNginxRequestOne()

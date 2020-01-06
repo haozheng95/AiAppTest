@@ -15,7 +15,7 @@ __mtime__ = '2019-12-02'
 import requests
 
 baseUrl = "http://47.105.165.164"
-baseUrl = "http://127.0.0.1"
+# baseUrl = "http://127.0.0.1"
 fileDir = "data"
 
 
@@ -112,10 +112,10 @@ def face_ai_1(name, file):
     url = baseUrl + ":" + str(port)
     files = {}
     face_ai_data = os.path.join(fileDir, "faceai")
-    if name == "compose":
-        maozi = os.path.join(face_ai_data, "maozi-1.png")
-        decorate = open(maozi, "rb")
-        files["decorate"] = decorate
+    # if name == "compose":
+    #     maozi = os.path.join(face_ai_data, "huzi-1.png")
+    #     decorate = open(maozi, "rb")
+    #     files["decorate"] = decorate
     url += "/" + name
 
     file = os.path.join(face_ai_data, file)
@@ -197,5 +197,5 @@ def lane():
 
 
 if __name__ == '__main__':
-    result = face_ai_gender()
+    result = face_ai_compose()
     print(result)

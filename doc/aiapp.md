@@ -40,7 +40,7 @@ img{
    }
 	```
 - 服务演示
-	- 输入 ![img](data/idcardocr.jpg)
+	- 输入 ![img](../test/data/idcardocr.jpg)
 	- 输出 
 	```
    {
@@ -91,7 +91,7 @@ img{
    	}
 	``` 
 - 服务演示
-	- 输入图片 ![img](data/math_ai.jpg) 
+	- 输入图片 ![img](../test/data/math_ai.jpg) 
 	- 输出图片 ![img](http://47.105.165.164:7002/_uploads/PHOTO/1576206098.png)
 
 
@@ -127,7 +127,7 @@ img{
    	}
 	``` 	 
 - 服务演示
-	- 输入图片 ![img](data/licensePlateRecognition.jpg)
+	- 输入图片 ![img](../test/data/licensePlateRecognition.jpg)
 	- 输出文本 
 	```
 	{
@@ -174,7 +174,7 @@ img{
    	}
 	``` 	
 - 服务演示
-	- 输入图片 ![img](data/faceai/gather.png)
+	- 输入图片 ![img](../test/data/faceai/gather.png)
 	- 输出图片 ![img](http://47.105.165.164:7009/_uploads/PHOTO/1576207403.5848072gather_21.png) 
 
 
@@ -213,7 +213,7 @@ img{
    	}
 	``` 	
 - 服务演示
-	- 输入图片 ![img](data/playing-card-recognition.jpg)
+	- 输入图片 ![img](../test/data/playing-card-recognition.jpg)
 	- 输出文本 
 	```
 	{
@@ -256,7 +256,7 @@ img{
     }
 	``` 	
 - 服务演示
-	- 输入图片 ![img](data/faceai/chinese_ocr_2.png) 
+	- 输入图片 ![img](../test/data/faceai/chinese_ocr_2.png) 
 	- 输出文本
 	```
 	{
@@ -299,7 +299,7 @@ img{
    	```
 
 - 服务演示
-	- 输入图片 ![img](data/faceai/ag.png)
+	- 输入图片 ![img](../test/data/faceai/ag.png)
 	- 输出图片 ![img](http://47.105.165.164:7009/_uploads/PHOTO/1576648178.8192759ag_22.png)
 
 
@@ -335,7 +335,7 @@ img{
    	```
 
 - 服务演示
-	- 输入图片 ![img](data/faceai/ag.png)
+	- 输入图片 ![img](../test/data/faceai/ag.png)
 	- 输出图片 ![img](http://47.105.165.164:7009/_uploads/PHOTO/1576648420.6234505ag_23.png)
 
 -- 
@@ -375,7 +375,7 @@ img{
    	``` 
 
 - 服务演示
-	- 输入图片 ![img](data/faceai/emotion.png)
+	- 输入图片 ![img](../test/data/faceai/emotion.png)
 	- 输出图片 ![img](http://47.105.165.164:7009/_uploads/PHOTO/1576648571.1048806emotion_11.png)
 
 
@@ -411,7 +411,7 @@ img{
 
 
 - 服务演示
-	- 输入图片 ![img](data/faceai/xingye-1.png)
+	- 输入图片 ![img](../test/data/faceai/xingye-1.png)
 	- 输出图片 ![img](http://47.105.165.164:7009/_uploads/PHOTO/1576648834.1660767xingye-1_11.png)
 
  
@@ -447,7 +447,7 @@ img{
    	``` 
 
 - 服务演示
-	- 输入图片 ![img](data/faceai/compose.png)
+	- 输入图片 ![img](../test/data/faceai/compose.png)
 	- 输出图片 ![img](http://47.105.165.164:7009/_uploads/PHOTO/1576649061.355849compose_13.png)
 
 
@@ -483,7 +483,7 @@ img{
 
 
 - 服务演示
-	- 输入图片 ![img](data/faceai/colorize2.png)
+	- 输入图片 ![img](../test/data/faceai/colorize2.png)
 	- 输出图片 ![img](http://47.105.165.164:7009/_uploads/PHOTO/1576649204.618092colorize2_11.png)
 
 	
@@ -517,7 +517,7 @@ img{
    	```
 
 - 服务演示
-	- 输入图片 ![img](data/opencv_car_location.jpg)
+	- 输入图片 ![img](../test/data/opencv_car_location.jpg)
 	- 输出图片 ![img](http://47.105.165.164:7006/_uploads/PHOTO/1576649753.243514opencv_car_location_14.jpg)
 
 --
@@ -556,8 +556,8 @@ img{
    	
    	
 - 服务演示
-	- 输入图片A ![img](data/ImageStitching/01_suburbA.jpg)
-	- 输入图片B ![img](data/ImageStitching/01_suburbB.jpg)
+	- 输入图片A ![img](../test/data/ImageStitching/01_suburbA.jpg)
+	- 输入图片B ![img](../test/data/ImageStitching/01_suburbB.jpg)
 	- 输出图片 ![img](http://47.105.165.164:7005/_uploads/PHOTO/1576649992.299759401_suburbB_13.jpg)
 
 	
@@ -597,8 +597,8 @@ img{
    	
 
 - 服务演示
-	- 输入图片 【template】 ![img](data/nowatermark/template.jpg)
-	- 输入图片 【file】![img](data/nowatermark/file.jpg)
+	- 输入图片 【template】 ![img](../test/data/nowatermark/template.jpg)
+	- 输入图片 【file】![img](../test/data/nowatermark/file.jpg)
 	- 输出图片 ![img](http://47.105.165.164:7003/_uploads/PHOTO/1576650303.7791777file_12.jpg)
 
 --
@@ -631,7 +631,7 @@ img{
    	```
 
 - 服务演示
-	- 输入图片 ![img](data/scanner_doc/desk.JPG)
+	- 输入图片 ![img](../test/data/scanner_doc/desk.JPG)
 	- 输出图片 ![img](http://47.105.165.164:7011/_uploads/PHOTO/1577694214.6634755desk.jpg)
 
 
@@ -665,5 +665,5 @@ img{
    	```
 
 - 服务演示
-	- 输入图片 ![img](data/lane.jpg)
+	- 输入图片 ![img](../test/data/lane.jpg)
 	- 输出图片 ![img](http://47.105.165.164:7012/_uploads/PHOTO/1577695937.5642009lane.jpg)

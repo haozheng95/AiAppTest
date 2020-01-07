@@ -6,12 +6,11 @@
 @file: test_func.py
 @time: 2019-12-02 11:51
 """
-import sys
 
 __mtime__ = '2019-12-02'
 
 import pytest
-from request import *
+from test.request import *
 import logging
 
 logging.basicConfig(level=logging.DEBUG)

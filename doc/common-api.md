@@ -52,8 +52,8 @@
    	}
 	``` 
 - 服务演示
-	- 输入图片 ![img](data/math_ai.jpg) 
-	- 输出图片 ![img](servicer/image/1577699153.png)
+	- 输入图片 ![img](../test/data/math_ai.jpg) 
+	- 输出图片 ![img](../test/servicer/image/1577699153.png)
 
 
 
@@ -91,8 +91,8 @@
    	}
 	``` 	
 - 服务演示
-	- 输入图片 ![img](data/faceai/gather.png)
-	- 输出图片 ![img](servicer/image/1577699493.3498232gather_13.png) 
+	- 输入图片 ![img](../test/data/faceai/gather.png)
+	- 输出图片 ![img](../test/servicer/image/1577699493.3498232gather_13.png) 
 
 
 
@@ -131,7 +131,7 @@
    	}
 	``` 	
 - 服务演示
-	- 输入图片 ![img](data/playing-card-recognition.jpg)
+	- 输入图片 ![img](../test/data/playing-card-recognition.jpg)
 	- 输出文本 
 	```
 	{
@@ -181,8 +181,8 @@
    	```
 
 - 服务演示
-	- 输入图片 ![img](data/faceai/ag.png)
-	- 输出图片 ![img](servicer/image/1577699502.3308392ag_7.png)
+	- 输入图片 ![img](../test/data/faceai/ag.png)
+	- 输出图片 ![img](../test/servicer/image/1577699502.3308392ag_7.png)
 
 
 --
@@ -219,8 +219,8 @@
    	```
 
 - 服务演示
-	- 输入图片 ![img](data/faceai/ag.png)
-	- 输出图片 ![img](servicer/image/1577699501.7196143ag_6.png)
+	- 输入图片 ![img](../test/data/faceai/ag.png)
+	- 输出图片 ![img](../test/servicer/image/1577699501.7196143ag_6.png)
 
 -- 
 
@@ -261,8 +261,8 @@
    	``` 
 
 - 服务演示
-	- 输入图片 ![img](data/faceai/emotion.png)
-	- 输出图片 ![img](servicer/image/1577699501.3545158emotion_3.png)
+	- 输入图片 ![img](../test/data/faceai/emotion.png)
+	- 输出图片 ![img](../test/servicer/image/1577699501.3545158emotion_3.png)
 
 
 -- 
@@ -298,8 +298,8 @@
 
 
 - 服务演示
-	- 输入图片 ![img](data/faceai/xingye-1.png)
-	- 输出图片 ![img](servicer/image/1577699501.059781xingye-1_3.png)
+	- 输入图片 ![img](../test/data/faceai/xingye-1.png)
+	- 输出图片 ![img](../test/servicer/image/1577699501.059781xingye-1_3.png)
 
  
 --
@@ -336,8 +336,8 @@
    	``` 
 
 - 服务演示
-	- 输入图片 ![img](data/faceai/compose.png)
-	- 输出图片 ![img](servicer/image/1577699935.9404113compose_7.png)
+	- 输入图片 ![img](../test/data/faceai/compose.png)
+	- 输出图片 ![img](../test/servicer/image/1577699935.9404113compose_7.png)
 
 
 --
@@ -374,8 +374,8 @@
 
 
 - 服务演示
-	- 输入图片 ![img](data/faceai/colorize2.png)
-	- 输出图片 ![img](servicer/image/1577699498.78695colorize2_3.png)
+	- 输入图片 ![img](../test/data/faceai/colorize2.png)
+	- 输出图片 ![img](../test/servicer/image/1577699498.78695colorize2_3.png)
 
 	
 
@@ -417,9 +417,9 @@
    	
    	
 - 服务演示
-	- 输入图片A ![img](data/ImageStitching/01_suburbA.jpg)
-	- 输入图片B ![img](data/ImageStitching/01_suburbB.jpg)
-	- 输出图片 ![img](servicer/image/1577699988.954998701_suburbB_21.jpg)
+	- 输入图片A ![img](../test/data/ImageStitching/01_suburbA.jpg)
+	- 输入图片B ![img](../test/data/ImageStitching/01_suburbB.jpg)
+	- 输出图片 ![img](../test/servicer/image/1577699988.954998701_suburbB_21.jpg)
 
 	
 
@@ -455,8 +455,8 @@
    	```
 
 - 服务演示
-	- 输入图片 ![img](data/scanner_doc/chart.JPG)
-	- 输出图片 ![img](servicer/image/1577699168.6575367chart_3.jpg)
+	- 输入图片 ![img](../test/data/scanner_doc/chart.JPG)
+	- 输出图片 ![img](../test/servicer/image/1577699168.6575367chart_3.jpg)
 
 
 --
@@ -492,5 +492,5 @@
    	```
 
 - 服务演示
-	- 输入图片 ![img](data/lane.jpg)
-	- 输出图片 ![img](servicer/image/1577699169.2528865lane_4.jpg)
+	- 输入图片 ![img](../test/data/lane.jpg)
+	- 输出图片 ![img](../test/servicer/image/1577699169.2528865lane_4.jpg)

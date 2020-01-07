@@ -8,7 +8,6 @@
 """
 import os
 
-import pytest
 import requests
 
 __mtime__ = '2019-12-23'
@@ -154,8 +153,8 @@ if __name__ == '__main__':
     # # print(content)
     # # result = requestOne(content["file"], content["url"])
     # # print(result)
-    # testNginxPlayingCardRecognition()
-    # testNginxNowatermark()
-    # testNginxImageStitching()
-    # testNginxRequestFaceAi()
-    # testNginxRequestOne()
+    testNginxPlayingCardRecognition()
+    testNginxNowatermark()
+    testNginxImageStitching()
+    testNginxRequestFaceAi()
+    testNginxRequestOne()

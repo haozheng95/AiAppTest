@@ -3,8 +3,8 @@
 git_result=`git pull`;
 echo "git result are \n $git_result";
 
-down_result=`docker-composer down`;
+down_result=`docker-compose down`;
 echo "down result are \n $down_result";
 
-up_result=`docker-composer -d`;
+up_result=`docker-compose -d`;
 echo "up result are \n $up_result";

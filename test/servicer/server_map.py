@@ -33,7 +33,8 @@ AccessMap = {
 }
 
 baseUrl = "http://47.105.165.164:7010"
-fileDir = os.path.abspath("../data")
+# fileDir = os.path.abspath("../data")
+fileDir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),"data")
 
 requestOneList = [
     {"url": baseUrl + "/mathai", "file": os.path.join(fileDir, "math_ai.jpg")},
